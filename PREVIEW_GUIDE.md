@@ -9,9 +9,10 @@ This guide explains how to use the new preview functionality to see the Fabify t
 ### 1. Quick Preview Section in README
 
 The README now features a prominent "🚀 Quick Preview" section at the top with:
-- Clickable badge buttons linking to localhost:3000 and this preview guide
+- Clickable badge buttons linking to this preview guide
 - Clear instructions for multiple launch methods
 - Visual styling with badges for better UX
+- Smart port detection that automatically finds an available port
 
 ### 2. Cross-Platform Launch Scripts
 
@@ -22,7 +23,8 @@ Two platform-specific preview scripts have been created:
 - Checks if dependencies need to be installed
 - Installs dependencies if needed
 - Navigates to the frontend directory
-- Starts the development server on port 3000
+- Finds an available port (starting from 3000, checking up to 3100)
+- Starts the development server on the found available port
 - Automatically attempts to open the application in the default browser
 
 #### **preview.bat** (Windows)

@@ -6,8 +6,9 @@ A premium curated marketplace theme for WordPress with WooCommerce integration, 
 ​
 **See the theme design in action before deploying to WordPress!**
 ​
-[![Preview](https://img.shields.io/badge/🌐_Live_Preview-Auto_Port-blue?style=for-the-badge)](http://localhost:3000)
 [![Guide](https://img.shields.io/badge/📖_Preview_Guide-PREVIEW__GUIDE.md-green?style=for-the-badge)](PREVIEW_GUIDE.md)
+
+> 💡 **Note**: The preview server automatically finds and uses an available port (starting from 3000). After launching, check the terminal output for the actual URL (e.g., `http://localhost:3001`).
 ​
 ### Launch Methods
 ​
