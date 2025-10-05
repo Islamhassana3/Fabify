@@ -166,9 +166,12 @@
                                 <span class="rating-count">(<?php echo get_post_meta(get_the_ID(), '_review_count', true); ?>)</span>
                             </div>
                             
-                            <button class="add-to-cart" data-product-id="<?php the_ID(); ?>">
-                                <i class="fas fa-shopping-cart"></i> <?php _e('Add to Cart', 'fabify-shop'); ?>
-                            </button>
+                            <?php
+                            global $product;
+                            if ($product && $product->is_purchasable() && $product->is_in_stock()) {
+                                woocommerce_template_loop_add_to_cart();
+                            }
+                            ?>
                         </div>
                     </div>
                 <?php
