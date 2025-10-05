@@ -6,7 +6,7 @@ A premium curated marketplace theme for WordPress with WooCommerce integration, 
 
 **See the theme design in action before deploying to WordPress!**
 
-[![Preview](https://img.shields.io/badge/🌐_Live_Preview-localhost:3000-blue?style=for-the-badge)](http://localhost:3000)
+[![Preview](https://img.shields.io/badge/🌐_Live_Preview-Auto_Port-blue?style=for-the-badge)](http://localhost:3000)
 [![Guide](https://img.shields.io/badge/📖_Preview_Guide-PREVIEW__GUIDE.md-green?style=for-the-badge)](PREVIEW_GUIDE.md)
 
 ### Launch Methods
@@ -30,8 +30,9 @@ npm start
 
 The preview server will automatically:
 - ✅ Detect and install dependencies if needed
-- ✅ Start the development server on port 3000
-- ✅ Open your browser automatically to http://localhost:3000
+- ✅ Find an available port (starting from 3000)
+- ✅ Start the development server on the available port
+- ✅ Open your browser automatically
 
 > **Note:** This preview shows the static HTML design. For full WordPress/WooCommerce functionality, follow the installation guide below.
 

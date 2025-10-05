@@ -68,12 +68,12 @@ The preview shows:
 
 ### Server Setup
 - **Package**: http-server (lightweight Node.js HTTP server)
-- **Port**: 3000
-- **Auto-open**: Browser opens automatically to http://localhost:3000
+- **Port**: Automatically finds available port (starts checking from 3000)
+- **Auto-open**: Browser opens automatically to the available port
 - **Features**:
   - No build process required
   - Instant startup
-  - Hot reload on file changes
+  - Smart port detection (handles port conflicts automatically)
 
 ### Directory Structure
 ```
@@ -82,6 +82,7 @@ frontend/
 ├── README.md           # Frontend-specific documentation
 ├── package.json        # Node.js dependencies and scripts
 ├── package-lock.json   # Locked dependency versions
+├── find-port.js        # Smart port detection script
 └── public/
     └── index.html      # Preview HTML (copy of reference design)
 ```
@@ -112,13 +113,8 @@ Both scripts check for:
 
 ## Troubleshooting
 
-### Port 3000 Already in Use
-If port 3000 is already in use:
-```bash
-# Stop the conflicting process or use a different port
-cd frontend
-npx http-server public -p 3001 -o
-```
+### Port Already in Use
+The preview server automatically finds an available port, so you don't need to worry about port conflicts. The server will check ports starting from 3000 up to 3100 and use the first available one.
 
 ### Node.js Not Installed
 Download and install Node.js from: https://nodejs.org/

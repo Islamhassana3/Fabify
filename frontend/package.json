@@ -4,8 +4,8 @@
   "description": "Fabify Theme Preview Server",
   "main": "index.js",
   "scripts": {
-    "dev": "http-server public -p 3000 -o",
-    "start": "http-server public -p 3000 -o"
+    "dev": "node find-port.js",
+    "start": "node find-port.js"
   },
   "keywords": ["preview", "fabify"],
   "author": "",

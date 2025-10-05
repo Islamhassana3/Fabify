@@ -46,7 +46,7 @@ else
 fi
 
 # Start the development server
-echo "🌐 Starting preview server on http://localhost:3000"
+echo "🌐 Finding available port and starting preview server..."
 echo "📱 Your browser will open automatically..."
 echo ""
 echo "Press Ctrl+C to stop the server"

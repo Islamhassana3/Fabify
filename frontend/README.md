@@ -28,7 +28,7 @@ npm install
 npm start
 ```
 
-The preview will automatically open in your browser at http://localhost:3000
+The preview will automatically find an available port (starting from 3000) and open in your browser
 
 ## What You'll See
 
