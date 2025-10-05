@@ -7,7 +7,7 @@ The WordPress theme is now properly structured in the `fabify-theme/` directory 
 ## 📦 What You Have
 
 1. **fabify-theme/** - Complete WordPress theme (ready to upload)
-2. **fabify-theme.zip** - Pre-packaged theme for easy WordPress upload
+2. **Fabify-v1.zip** - Pre-packaged theme for easy WordPress upload (5.2MB)
 3. **WORDPRESS_SETUP_GUIDE.md** - Detailed Hostinger setup instructions
 4. **Qwen_html_20251004_gwewc78ws.html** - Original design reference
 
@@ -18,7 +18,7 @@ The WordPress theme is now properly structured in the `fabify-theme/` directory 
 **Option A - WordPress Admin Upload (Easiest)**
 1. Log in to WordPress: `https://yourdomain.com/wp-admin`
 2. Go to **Appearance** → **Themes** → **Add New** → **Upload Theme**
-3. Choose `fabify-theme.zip` from this repository
+3. Choose `Fabify-v1.zip` from this repository
 4. Click **Install Now** → **Activate**
 
 **Option B - FTP Upload**
@@ -51,7 +51,8 @@ After deploying, these files are just for reference and can be removed:
 
 **Keep these:**
 - `fabify-theme/` folder (your working theme)
-- `fabify-theme.zip` (backup copy)
+- `Fabify-v1.zip` (installation package)
+- `FABIFY-V1-PACKAGE.md` (package documentation)
 - `WORDPRESS_SETUP_GUIDE.md` (detailed instructions)
 - `README.md` (project documentation)
 
