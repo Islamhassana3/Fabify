@@ -7,7 +7,7 @@ A premium curated marketplace theme for WordPress with WooCommerce integration, 
 **See the theme design in action before deploying to WordPress!**
 
 [![Preview](https://img.shields.io/badge/🌐_Live_Preview-localhost:3000-blue?style=for-the-badge)](http://localhost:3000)
-[![Guide](https://img.shields.io/badge/📖_Preview_Guide-frontend/README.md-green?style=for-the-badge)](frontend/README.md)
+[![Guide](https://img.shields.io/badge/📖_Preview_Guide-PREVIEW__GUIDE.md-green?style=for-the-badge)](PREVIEW_GUIDE.md)
 
 ### Launch Methods
 
