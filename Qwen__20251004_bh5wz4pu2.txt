@@ -1,0 +1,15 @@
+fabify-wordpress-theme/
+├── style.css
+├── functions.php
+├── index.php
+├── header.php
+├── footer.php
+├── front-page.php
+├── template-homepage.php
+├── screenshot.png
+└── assets/
+    ├── css/
+    │   └── custom.css
+    ├── js/
+    │   └── custom.js
+    └── images/
