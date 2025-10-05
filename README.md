@@ -2,6 +2,41 @@
 
 A premium curated marketplace theme for WordPress with WooCommerce integration, designed for easy deployment on Hostinger.
 
+## 🚀 Quick Preview
+
+**See the theme design in action before deploying to WordPress!**
+
+[![Preview](https://img.shields.io/badge/🌐_Live_Preview-localhost:3000-blue?style=for-the-badge)](http://localhost:3000)
+[![Guide](https://img.shields.io/badge/📖_Preview_Guide-frontend/README.md-green?style=for-the-badge)](frontend/README.md)
+
+### Launch Methods
+
+**🪟 Windows:**
+```bash
+preview.bat
+```
+
+**🐧 Linux / 🍎 Mac:**
+```bash
+./preview.sh
+```
+
+**📦 Manual:**
+```bash
+cd frontend
+npm install
+npm start
+```
+
+The preview server will automatically:
+- ✅ Detect and install dependencies if needed
+- ✅ Start the development server on port 3000
+- ✅ Open your browser automatically to http://localhost:3000
+
+> **Note:** This preview shows the static HTML design. For full WordPress/WooCommerce functionality, follow the installation guide below.
+
+---
+
 ## 🎉 What's New - Fixed & Ready for Hostinger!
 
 The theme has been properly restructured as a **complete WordPress theme** ready for installation on Hostinger or any WordPress site.

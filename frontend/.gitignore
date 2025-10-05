@@ -1,0 +1,9 @@
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Lock files (optional - some projects commit these)
+# package-lock.json

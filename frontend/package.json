@@ -1,0 +1,16 @@
+{
+  "name": "fabify-preview",
+  "version": "1.0.0",
+  "description": "Fabify Theme Preview Server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server public -p 3000 -o",
+    "start": "http-server public -p 3000 -o"
+  },
+  "keywords": ["preview", "fabify"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
