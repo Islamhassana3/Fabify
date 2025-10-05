@@ -39,12 +39,6 @@ function fabify_shop_scripts() {
     
     // Enqueue scripts
     wp_enqueue_script('fabify-shop-custom', get_template_directory_uri() . '/assets/js/custom.js', array('jquery'), '1.0.0', true);
-    
-    // Localize script for AJAX
-    wp_localize_script('fabify-shop-custom', 'fabify_ajax', array(
-        'ajax_url' => admin_url('admin-ajax.php'),
-        'nonce' => wp_create_nonce('fabify_nonce')
-    ));
 }
 add_action('wp_enqueue_scripts', 'fabify_shop_scripts');
 
@@ -148,35 +142,17 @@ function fabify_shop_customize_register($wp_customize) {
 }
 add_action('customize_register', 'fabify_shop_customize_register');
 
-// AJAX handler for adding to cart
-function fabify_add_to_cart() {
-    check_ajax_referer('fabify_nonce', 'nonce');
-    
-    $product_id = intval($_POST['product_id']);
-    
-    if ($product_id > 0) {
-        WC()->cart->add_to_cart($product_id, 1);
-        wp_send_json_success(array('message' => 'Product added to cart!'));
-    } else {
-        wp_send_json_error(array('message' => 'Invalid product ID'));
+// Update cart fragments for AJAX cart updates
+if (class_exists('WooCommerce')) {
+    function fabify_shop_cart_fragments($fragments) {
+        ob_start();
+        $cart_count = WC()->cart->get_cart_contents_count();
+        if ($cart_count > 0) {
+            echo '<span class="cart-count">' . esc_html($cart_count) . '</span>';
+        }
+        $fragments['.cart-count'] = ob_get_clean();
+        return $fragments;
     }
+    add_filter('woocommerce_add_to_cart_fragments', 'fabify_shop_cart_fragments');
 }
-add_action('wp_ajax_fabify_add_to_cart', 'fabify_add_to_cart');
-add_action('wp_ajax_nopriv_fabify_add_to_cart', 'fabify_add_to_cart');
-
-// Custom post types for products (if not using WooCommerce)
-function fabify_register_custom_post_types() {
-    register_post_type('fabify_product', array(
-        'labels' => array(
-            'name' => __('Products', 'fabify-shop'),
-            'singular_name' => __('Product', 'fabify-shop'),
-        ),
-        'public' => true,
-        'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail', 'excerpt'),
-        'menu_icon' => 'dashicons-products',
-        'rewrite' => array('slug' => 'products'),
-    ));
-}
-add_action('init', 'fabify_register_custom_post_types');
 ?>

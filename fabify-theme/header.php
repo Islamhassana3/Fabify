@@ -35,11 +35,22 @@
                         <i class="fas fa-percent nav-icon"></i>
                         <?php _e('Deals', 'fabify-shop'); ?>
                     </a>
-                    <a href="#" class="nav-link" id="cartIcon">
+                    <?php if (class_exists('WooCommerce')) : ?>
+                    <a href="<?php echo esc_url(wc_get_cart_url()); ?>" class="nav-link">
                         <i class="fas fa-shopping-cart nav-icon"></i>
-                        <span class="cart-count">0</span>
+                        <?php 
+                        $cart_count = WC()->cart->get_cart_contents_count();
+                        if ($cart_count > 0) : ?>
+                        <span class="cart-count"><?php echo esc_html($cart_count); ?></span>
+                        <?php endif; ?>
                     </a>
+                    <?php else : ?>
                     <a href="#" class="nav-link">
+                        <i class="fas fa-shopping-cart nav-icon"></i>
+                        <span class="cart-count" style="display: none;">0</span>
+                    </a>
+                    <?php endif; ?>
+                    <a href="<?php echo esc_url(get_permalink(get_option('woocommerce_myaccount_page_id'))); ?>" class="nav-link">
                         <i class="fas fa-user nav-icon"></i>
                         <?php _e('Account', 'fabify-shop'); ?>
                     </a>
