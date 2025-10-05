@@ -8,7 +8,8 @@ Your repository has been successfully transformed from a collection of HTML and 
 
 ### Main Theme Package
 - **Location**: `fabify-theme/` directory
-- **Installation File**: `fabify-theme.zip` (5.2MB, ready to upload)
+- **Installation File**: `Fabify-v1.zip` (5.2MB, ready to upload)
+- **Package Documentation**: `FABIFY-V1-PACKAGE.md`
 - **Status**: ✅ Complete and tested
 
 ### Theme Structure
@@ -77,7 +78,7 @@ fabify-theme/
 1. **Upload Theme**
    ```
    WordPress Admin → Appearance → Themes → Upload Theme
-   Choose: fabify-theme.zip
+   Choose: Fabify-v1.zip
    Click: Install Now → Activate
    ```
 
@@ -116,7 +117,8 @@ All theme files have been validated:
 
 ### Keep These Files
 - ✅ `fabify-theme/` - Your working theme
-- ✅ `fabify-theme.zip` - Installation package
+- ✅ `Fabify-v1.zip` - Installation package
+- ✅ `FABIFY-V1-PACKAGE.md` - Package documentation
 - ✅ `README.md` - Main documentation
 - ✅ `QUICK_START.md` - Quick start guide
 - ✅ `DEPLOYMENT_SUMMARY.md` - This file
@@ -186,7 +188,7 @@ Plugins → Add New → "WooCommerce Stripe Payment Gateway"
 | Item | Size | Notes |
 |------|------|-------|
 | Theme folder | ~5MB | With logos and assets |
-| fabify-theme.zip | 5.2MB | Ready to upload |
+| Fabify-v1.zip | 5.2MB | Ready to upload |
 | screenshot.png | 1.4MB | Theme thumbnail |
 | Logo files | 2MB | Included in assets |
 
@@ -219,7 +221,7 @@ Your Fabify marketplace theme is now:
 
 **You're all set to launch your marketplace on Hostinger!** 🎉
 
-Simply upload `fabify-theme.zip` to WordPress, install WooCommerce, and you'll be live.
+Simply upload `Fabify-v1.zip` to WordPress, install WooCommerce, and you'll be live.
 
 ---
 

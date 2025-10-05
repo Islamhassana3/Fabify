@@ -16,7 +16,7 @@ Your messy HTML/PHP files have been transformed into a **complete, professional 
 2. **Upload Theme**
    ```
    Appearance → Themes → Add New → Upload Theme
-   Choose: fabify-theme.zip
+   Choose: Fabify-v1.zip
    Click: Install Now → Activate
    ```
 
@@ -64,8 +64,9 @@ Choose what you need:
 
 ### Ready to Use
 - ✅ `fabify-theme/` - Complete WordPress theme
-- ✅ `fabify-theme.zip` - Installation package (5.2MB)
-- ✅ 6 documentation files
+- ✅ `Fabify-v1.zip` - Installation package (5.2MB)
+- ✅ `FABIFY-V1-PACKAGE.md` - Package documentation
+- ✅ 6+ documentation files
 - ✅ All validated and tested
 
 ### Reference Only (Optional)
@@ -159,7 +160,7 @@ Your WordPress theme is:
 - ✅ Fully documented
 - ✅ Tested and working
 
-**Just upload fabify-theme.zip and you're live!**
+**Just upload Fabify-v1.zip and you're live!**
 
 ---
 
