@@ -1,0 +1,31 @@
+# WordPress
+node_modules/
+vendor/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Build artifacts
+dist/
+build/
+
+# Large media files (optional - can be versioned if needed)
+# *.jpg
+# *.png
+# *.gif
+
+# Zip files (except small ones)
+fabify-theme.zip
+fabify-checkout.zip
