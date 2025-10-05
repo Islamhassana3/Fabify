@@ -1,0 +1,16 @@
+{
+  "name": "fabify-preview",
+  "version": "1.0.0",
+  "description": "Fabify Theme Preview Server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node find-port.js",
+    "start": "node find-port.js"
+  },
+  "keywords": ["preview", "fabify"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
