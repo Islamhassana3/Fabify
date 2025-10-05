@@ -26,5 +26,6 @@ build/
 # *.png
 # *.gif
 
-# Zip files
-*.zip
+# Zip files (except small ones)
+fabify-theme.zip
+fabify-checkout.zip
