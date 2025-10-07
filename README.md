@@ -6,7 +6,7 @@ A premium curated marketplace theme for WordPress with WooCommerce integration, 
 ​
 **See the theme design in action before deploying to WordPress!**
 ​
-[![Guide](https://img.shields.io/badge/📖_Preview_Guide-PREVIEW__GUIDE.md-green?style=for-the-badge)](PREVIEW_GUIDE.md)
+[![Live Preview](https://img.shields.io/badge/🌐_Live_Preview-View_Demo-blue?style=for-the-badge)](https://islamhassana3.github.io/Fabify/) [![Guide](https://img.shields.io/badge/📖_Preview_Guide-PREVIEW__GUIDE.md-green?style=for-the-badge)](PREVIEW_GUIDE.md)
 
 > 💡 **Note**: The preview server automatically finds and uses an available port (starting from 3000). After launching, check the terminal output for the actual URL (e.g., `http://localhost:3001`).
 ​
